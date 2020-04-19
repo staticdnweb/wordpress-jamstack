@@ -5,6 +5,14 @@
  */
 
 module.exports = {
-  /* Your site config here */
-  plugins: [],
+  plugins: [
+    {
+       resolve: 'gatsby-source-graphql',
+       options: {
+         typeName: 'WPGraphQL',
+         fieldName: 'wpgraphql',
+         url: 'http://test1.demo.hoangdata.com/graphql',
+       }
+    }
+  ]
 }
